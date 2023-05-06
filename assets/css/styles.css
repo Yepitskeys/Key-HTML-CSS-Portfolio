@@ -1,5 +1,4 @@
 /* Need to set a color scheme for the page and add here */
-
 :root {
     --main-color: #F58426;
     --accent-color: #006BB6;
@@ -45,6 +44,11 @@ h5 {
 h6 {
     color:#006BB6;
     margin: 0;
+}
+
+h7{
+    padding: 20px;
+    text-align: center;
 }
 
 nav {
@@ -147,6 +151,38 @@ body {
 .contact-bar a:hover {
     background-color: var(--main-color);
     color:#fff;
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+
+.card {
+    display:flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    padding: 40px;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: flex;
+    background: linear-gradient(90deg, #006BB6, transparent) #F58426;
+    color: var(--white);
+}
+
+.container {
+    padding: 5px 30px;
+    justify-content: flex-start;
+}
+
+.card header {
+    padding: 10px;
   }
 
 @media screen and (max-width: 768px);{
